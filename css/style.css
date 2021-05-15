@@ -1,0 +1,360 @@
+    /* import google fonts open sans */
+    
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+    /* RESET MARGIN & PADDING */
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    /* HTML & BODY STYLING */
+    
+    html,
+    body {
+        font-family: "Open Sans", sans-serif;
+        background: #fff;
+        color: #fff;
+        line-height: 1.6;
+    }
+    /* CONTAINER STYLING */
+    
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+    /* NAVBAR STYLING */
+    
+    #main-nav {
+        background: #0a2a66;
+        padding: 0.7rem;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    
+    #main-nav .nav-container {
+        text-align: center;
+    }
+    
+    #main-nav .nav-container ul li a {
+        display: inline-block;
+        padding: 0.7rem;
+        font-weight: bold;
+    }
+    
+    #main-nav .nav-container .social a {
+        margin: 0 0.3rem;
+        display: inline-block;
+    }
+    
+    #main-nav .nav-container ul li a:hover {
+        background: #1865f2;
+        color: #fff;
+    }
+    
+    #main-nav ul li a.current {
+        background: rgb(238, 238, 238);
+        color: #0a2a66;
+    }
+    /* links & uls styling */
+    
+    #main-nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    /* NAVBAR IMAGE/LOGO STYLING */
+    
+    #main-nav img {
+        width: 50px;
+        height: 50px;
+    }
+    /* LOGO STYLING */
+    
+    #main-nav .logo {
+        display: flex;
+        align-items: center;
+    }
+    /* HEADER STYLING */
+    /* HOME PAGE COVER IMAGE */
+    
+    #showcase {
+        background-image: url("../images/phishing-1\ PNG.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+    }
+    
+    #showcase .showcase-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        position: relative;
+    }
+    /* showcase overlay */
+    
+    #showcase::before {
+        content: "";
+        background: rgba(0, 0, 0, 0.8);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    #showcase>* {
+        z-index: 10;
+    }
+    
+    #showcase .showcase-content h1 {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+    
+    #showcase a {
+        text-decoration: none;
+    }
+    /* ICONS */
+    
+    .icons {
+        padding: 30px;
+    }
+    
+    .icons h3 {
+        font-weight: bold;
+        color: #0a2a66;
+        /* padding: 10px; */
+    }
+    
+    .icons p {
+        color: #000;
+        /* padding: 10px; */
+        margin-right: 10px;
+        border: #0a2a66 1px solid;
+    }
+    /* ICONS IMAGE */
+    
+    #about img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+    /* ABOUT SECTION FLEXBOX */
+    
+    .flex-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+    /* SOLUTIONS SECTION */
+    /* FLEX COLUMNS */
+    
+    .flex-columns .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .flex-columns .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+    
+    .flex-columns .column .column-1,
+    .flex-columns .column .column-2 {
+        height: 100%;
+    }
+    /* SOLUTIONS SECTIONS IMAGE */
+    
+    .solutions img {
+        /* width: 1000px;
+        height: 700px; */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .solutions {
+        color: #000;
+    }
+    
+    .solutions .column-2 {
+        padding: 40px;
+        background: #1865f2;
+        height: 100%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .solutions .column-2 p {
+        margin-bottom: 10px;
+    }
+    
+    .solutions .btn {
+        background: #fff;
+        padding: 10px;
+        text-decoration: none;
+        color: #0a2a66;
+        font-weight: bold;
+    }
+    /* FOOTER STYLING */
+    
+    #main-footer {
+        height: 200px;
+        background: #0a2a66;
+        margin-top: 50px;
+    }
+    
+    #main-footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    /* Social links & icons Styling */
+    
+    #main-footer a {
+        color: #fff;
+        margin-right: 1rem;
+    }
+    
+    #main-footer i {
+        margin-bottom: 2rem;
+    }
+    /* padding top and bottom */
+    
+    .py-1 {
+        padding: 1.5rem 0;
+    }
+    
+    .py-2 {
+        padding: 2rem 0;
+    }
+    
+    .py-3 {
+        padding: 3rem 0;
+    }
+    /* padding all around */
+    
+    .p1 {
+        padding: 1.5rem;
+    }
+    
+    .p2 {
+        padding: 2rem;
+    }
+    
+    .p3 {
+        padding: 3rem;
+    }
+    /* BUTTONS */
+    
+    .btn {
+        cursor: pointer;
+        transition: 0.1s;
+        border-radius: 0.3rem;
+    }
+    
+    .btn:hover {
+        transition: 0.1s;
+        opacity: 0.8;
+    }
+    
+    .btn-primary {
+        background: #0a2a66;
+        color: #fff;
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+    }
+    
+    .btn-secondary {
+        background: #1865f2;
+        color: #fff;
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+    }
+    /* PHISHING PAGE STYLES */
+    /* IMAGES */
+    
+    #images img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #phishing-showcase {
+        background-image: url("../images/Identity\ theft\ PNG.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 50vh;
+    }
+    
+    #phishing-showcase .showcase-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        position: relative;
+    }
+    /* showcase overlay */
+    
+    #phishing-showcase::before {
+        content: "";
+        background: rgba(0, 0, 0, 0.8);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    #phishing-showcase>* {
+        z-index: 10;
+    }
+    
+    #phishing-showcase .showcase-content h1 {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+    
+    #phishing-showcase a {
+        text-decoration: none;
+    }
+    /* ABOUT PAGE  */
+    
+    #about p {
+        color: #000;
+        background-color: #fff;
+        border: 2px solid;
+        padding: 20px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+    #about {
+        padding: 20px;
+        margin: 20px;
+    }

@@ -1,0 +1,20 @@
+    /* QUERIES FOR LARGER SCREEN */
+    
+    @media (min-width: 768px) {
+        /* NAVBAR */
+        #main-nav .nav-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #main-nav .nav-container ul {
+            display: flex;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .flex-items {
+            flex-direction: column;
+        }
+    }
