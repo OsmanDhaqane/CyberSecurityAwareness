@@ -1,0 +1,1 @@
+This website serves as a tool to help the cyber laypersons since they are more likely to fall victims to cyber-threats than technology savvy persons. This website is developed to help them improve their awareness of cybersecurity.
